@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="code.js"></script>
 </head>
 <h1>Late fee calculator</h1>
 
- <button onclick="calculations()">Click to start</button>
+<label for="numBooks">Number of books that are late</label>
+    <input type="number" id="numBooks" min="0">
+<br>
+<label for="lateDVDs">Number of DVDs that are late</label>
+    <input type="number" id="lateDVDs" min="0">
+<br>
+<label for="daysLate">Enter number of days the items are late</label>
+    <input type="number" id="daysLate" min="0">
+<br>
+ <button onclick="calculations()">Calculate</button>
+<br>
+
+<p>Your total late fee is $<span id="totalFee"></span></p>
 <body>
 </body>
 </html>
